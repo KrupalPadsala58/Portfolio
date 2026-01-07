@@ -3,35 +3,61 @@
 @tailwind utilities;
 
 :root {
+  /* Fonts */
   --tj-ff-body: 'Sora', sans-serif;
   --tj-fz-body: 16px;
   --tj-ff-heading: 'Sora', sans-serif;
-  --tj-body: #dddddd;
-  --tj-theme-primary: #8750f7;
-  --tj-theme-secondary: #2a1454;
-  --tj-theme-accent-2: #140c1c;
-  --tj-off-white: #f6f3fc;
-  --tj-grey-2: #d9d9d9;
+  
+  /* Shared Colors */
+  --primary: #8750f7;
+  --secondary: #2a1454;
 }
 
+:root.dark {
+  --background: #0f0715;
+  --surface: #140c1c;
+  --text-primary: #ffffff;
+  --text-secondary: #dddddd;
+  --border: rgba(135, 80, 247, 0.2);
+  --shadow: rgba(0, 0, 0, 0.4);
+  --accent-glow: rgba(135, 80, 247, 0.15);
+}
+
+:root.light {
+  --background: #f6f3fc;
+  --surface: #ffffff;
+  --text-primary: #140c1c;
+  --text-secondary: #2a1454;
+  --border: rgba(135, 80, 247, 0.1);
+  --shadow: rgba(42, 20, 84, 0.1);
+  --accent-glow: rgba(135, 80, 247, 0.05);
+}
+
+/* Base styles using variables */
 body {
-  color: var(--tj-body);
-  background-color: var(--tj-theme-accent-2);
+  color: var(--text-secondary);
+  background-color: var(--background);
   font-family: var(--tj-ff-body);
   line-height: 1.5;
   overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+* {
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--tj-ff-heading);
+  color: var(--text-primary);
 }
 
 .tj-theme-primary {
-  color: var(--tj-theme-primary);
+  color: var(--primary);
 }
 
 .tj-bg-primary {
-  background-color: var(--tj-theme-primary);
+  background-color: var(--primary);
 }
 
 .tj-magic-cursor {

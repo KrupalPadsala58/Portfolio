@@ -39,13 +39,13 @@ const Hero = () => {
             viewport={{ once: true }}
             className="w-full md:w-7/12 text-center md:text-left order-1 md:order-2"
           >
-            <span className="inline-block text-xl font-medium text-white mb-4">
+            <span className="inline-block text-xl font-medium text-text-primary mb-4">
               Hi, I am Aneri.
             </span>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6 leading-tight">
               A creative <span className="text-primary italic">designer</span> based in India
             </h1>
-            <p className="text-lg md:text-xl text-body max-w-2xl mb-10 mx-auto md:mx-0">
+            <p className="text-lg md:text-xl text-text-secondary max-w-2xl mb-10 mx-auto md:mx-0">
               I design and code beautifully simple things and I love what I do. Just simple like that!
             </p>
 
@@ -68,7 +68,7 @@ const Hero = () => {
       </div>
       
       {/* Background decoration or text-stroke if needed */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-bold text-white/5 whitespace-nowrap pointer-events-none select-none z-0">
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-bold text-text-primary opacity-5 whitespace-nowrap pointer-events-none select-none z-0">
         ANERI RAVAL
       </div>
     </section>

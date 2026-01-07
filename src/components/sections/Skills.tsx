@@ -15,7 +15,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <section className="py-24 bg-accent relative overflow-hidden" id="skills">
+    <section className="py-24 bg-background relative overflow-hidden" id="skills">
        {/* Background Shape */}
        <div className="absolute top-0 right-0 opacity-10 pointer-events-none">
         <Image 
@@ -34,7 +34,7 @@ const Skills = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-4xl md:text-5xl font-bold text-text-primary mb-4"
           >
             My Skills
           </motion.h2>
@@ -59,16 +59,16 @@ const Skills = () => {
               viewport={{ once: true }}
               className="flex flex-col items-center group"
             >
-              <div className="w-40 h-44 bg-secondary/50 rounded-[30px] border border-white/5 flex flex-col items-center justify-center gap-6 group-hover:bg-primary/20 group-hover:border-primary transition-all duration-300">
+              <div className="w-40 h-44 bg-surface rounded-[30px] border border-border flex flex-col items-center justify-center gap-6 group-hover:bg-primary/20 group-hover:border-primary transition-all duration-300 shadow-sm hover:shadow-md">
                 <div className="w-14 h-14 transition-transform duration-300 group-hover:scale-110 relative">
                   <Image 
                     src={skill.icon} 
                     alt={skill.name} 
                     fill
-                    className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300" 
+                    className="w-full h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300 dark:invert-0 light:invert-[0.1]" 
                   />
                 </div>
-                <span className="text-2xl font-bold text-white/50 group-hover:text-white transition-colors">{skill.level}</span>
+                <span className="text-2xl font-bold text-text-primary/50 group-hover:text-text-primary transition-colors">{skill.level}</span>
               </div>
               <p className="mt-4 text-primary font-bold text-lg uppercase tracking-tight">{skill.name}</p>
             </motion.div>

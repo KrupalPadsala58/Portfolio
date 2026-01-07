@@ -17,7 +17,7 @@ const Marquee = () => {
   const duplicatedItems = [...marqueeItems, ...marqueeItems, ...marqueeItems, ...marqueeItems]
 
   return (
-    <section className="bg-secondary py-14 overflow-hidden border-y border-white/5">
+    <section className="bg-surface py-14 overflow-hidden border-y border-border">
       <div className="flex whitespace-nowrap">
         <motion.div 
           className="flex items-center gap-12"
@@ -39,7 +39,7 @@ const Marquee = () => {
                   className="w-full h-full object-contain" 
                 />
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold text-white/20 uppercase tracking-tighter">
+              <h2 className="text-4xl md:text-5xl font-bold text-text-primary/10 uppercase tracking-tighter">
                 {item.title}
               </h2>
             </div>

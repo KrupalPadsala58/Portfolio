@@ -109,17 +109,17 @@ const ProjectCard = ({
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
-        className="group bg-[#140c1c] rounded-[40px] overflow-hidden border border-white/10 hover:border-primary/50 transition-all duration-500 shadow-2xl"
+        className="group bg-surface rounded-[40px] overflow-hidden border border-border hover:border-primary/50 transition-all duration-500 shadow-xl"
       >
         <div className="p-8 md:p-12 lg:p-16 flex flex-col lg:flex-row gap-12 items-center">
           <div className="flex-1 order-2 lg:order-1">
             <span className="text-primary font-medium text-sm mb-3 block uppercase tracking-[0.2em]">
               {project.category}
             </span>
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 group-hover:text-primary transition-colors">
+            <h3 className="text-4xl md:text-5xl font-bold text-text-primary mb-6 group-hover:text-primary transition-colors">
               <a href="#">{project.title}</a>
             </h3>
-            <p className="text-body text-base leading-relaxed mb-8 opacity-80">
+            <p className="text-text-secondary text-base leading-relaxed mb-8 opacity-90">
               {project.desc}
             </p>
 
@@ -129,7 +129,7 @@ const ProjectCard = ({
                 {project.checklist.map((item: string, i: number) => (
                   <li
                     key={i}
-                    className="flex items-center gap-3 text-white/70 text-sm"
+                    className="flex items-center gap-3 text-text-secondary text-sm"
                   >
                     <span className="w-1.5 h-1.5 rounded-full bg-primary" />
                     {item}
@@ -144,7 +144,7 @@ const ProjectCard = ({
                 <a
                   key={i}
                   href="#"
-                  className="px-4 py-2 bg-white/5 hover:bg-primary/20 text-white/60 hover:text-primary text-xs rounded-full border border-white/5 hover:border-primary/30 transition-all"
+                  className="px-4 py-2 bg-background hover:bg-primary/20 text-text-secondary hover:text-primary text-xs rounded-full border border-border hover:border-primary/30 transition-all"
                 >
                   {tag}
                 </a>
@@ -154,10 +154,10 @@ const ProjectCard = ({
             <div className="project-button">
               <a
                 href="#"
-                className="inline-flex items-center gap-4 text-white font-bold text-lg hover:text-primary transition-colors group/btn"
+                className="inline-flex items-center gap-4 text-text-primary font-bold text-lg hover:text-primary transition-colors group/btn"
               >
                 View Live Project
-                <span className="relative flex items-center justify-center w-10 h-10 rounded-full border border-white/20 overflow-hidden transform group-hover/btn:scale-110 transition-transform duration-300">
+                <span className="relative flex items-center justify-center w-10 h-10 rounded-full border border-border overflow-hidden transform group-hover/btn:scale-110 transition-transform duration-300">
                   <motion.span className="absolute inset-0 bg-primary translate-y-full group-hover/btn:translate-y-0 transition-transform duration-300" />
                   <div className="relative z-10 flex gap-2 group-hover/btn:-translate-x-full transition-transform duration-300">
                     <FaArrowRight className="text-sm shrink-0" />
@@ -184,7 +184,7 @@ const ProjectCard = ({
 
 const Works = () => {
   return (
-    <section className="py-24 bg-[#0a0c10] relative" id="works">
+    <section className="py-24 bg-background relative" id="works">
       {/* Background Shape */}
       <div className="absolute top-0 right-0 opacity-20 pointer-events-none select-none">
         <Image
@@ -203,7 +203,7 @@ const Works = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-5xl md:text-6xl font-bold text-white mb-6"
+            className="text-5xl md:text-6xl font-bold text-text-primary mb-6"
           >
             My Recent Works
           </motion.h2>

@@ -15,6 +15,8 @@ const russo = Russo_One({
   weight: '400'
 })
 
+import { ThemeProvider } from '@/context/theme-context'
+
 export const metadata: Metadata = {
   title: 'Aneri Raval – Portfolio',
   description: 'Aneri Raval - Professional Portfolio',
@@ -26,10 +28,12 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en" className={`${sora.variable} ${russo.variable}`}>
-      <body className={sora.className}>
-        <MagicCursor />
-        {children}
+    <html lang="en" className={`${sora.variable} ${russo.variable}`} suppressHydrationWarning>
+      <body className={`${sora.className} bg-background text-text-secondary transition-colors duration-300`}>
+        <ThemeProvider>
+          <MagicCursor />
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

@@ -9,10 +9,15 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: '#8750f7',
-        secondary: '#2a1454',
-        accent: '#140c1c',
-        'off-white': '#f6f3fc',
+        primary: 'var(--primary)',
+        secondary: 'var(--secondary)',
+        background: 'var(--background)',
+        surface: 'var(--surface)',
+        'text-primary': 'var(--text-primary)',
+        'text-secondary': 'var(--text-secondary)',
+        border: 'var(--border)',
+        'accent-glow': 'var(--accent-glow)',
+        'off-white': '#f6f3fc', // Keeping for specific use cases if needed
         'grey-2': '#d9d9d9',
       },
       fontFamily: {

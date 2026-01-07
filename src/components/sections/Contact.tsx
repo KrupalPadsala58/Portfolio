@@ -6,10 +6,10 @@ import { FaArrowRight } from 'react-icons/fa'
 
 const Contact = () => {
   return (
-    <section className="py-24 bg-accent" id="contact">
+    <section className="py-24 bg-background" id="contact">
       <div className="container mx-auto px-4">
         {/* CTA Area */}
-        <div className="bg-secondary/30 rounded-[50px] p-12 md:p-20 border border-white/5 relative overflow-hidden group">
+        <div className="bg-surface rounded-[50px] p-12 md:p-20 border border-border relative overflow-hidden group shadow-lg">
           <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
             <div className="max-w-xl">
               <motion.p 
@@ -26,7 +26,7 @@ const Contact = () => {
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: 0.1 }}
                 viewport={{ once: true }}
-                className="text-4xl md:text-6xl font-bold text-white leading-tight"
+                className="text-4xl md:text-6xl font-bold text-text-primary leading-tight"
               >
                 Let’s have a chat
               </motion.h2>
@@ -40,10 +40,10 @@ const Contact = () => {
             >
               <a 
                 href="mailto:info@taylor.com" 
-                className="text-2xl md:text-4xl font-bold text-white hover:text-primary transition-colors flex items-center gap-4"
+                className="text-2xl md:text-4xl font-bold text-text-primary hover:text-primary transition-colors flex items-center gap-4"
               >
                 info@taylor.com
-                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border border-white/20 flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
+                <div className="w-12 h-12 md:w-16 md:h-16 rounded-full border border-border flex items-center justify-center group-hover:bg-primary group-hover:border-primary transition-all duration-300">
                   <FaArrowRight className="text-xl md:text-2xl" />
                 </div>
               </a>

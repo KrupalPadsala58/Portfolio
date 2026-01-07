@@ -19,7 +19,7 @@ const Footer = () => {
   ]
 
   return (
-    <footer className="bg-accent pt-20 pb-10 border-t border-white/5">
+    <footer className="bg-background pt-20 pb-10 border-t border-border">
       <div className="container mx-auto px-4 text-center">
         {/* Socials */}
         <ul className="flex justify-center items-center gap-6 mb-12">
@@ -52,7 +52,7 @@ const Footer = () => {
             <li key={item.name}>
               <Link 
                 href={item.href} 
-                className="text-white hover:text-primary font-bold text-lg transition-colors"
+                className="text-text-primary hover:text-primary font-bold text-lg transition-colors"
               >
                 {item.name}
               </Link>
@@ -61,8 +61,8 @@ const Footer = () => {
         </ul>
 
         {/* Copyright */}
-        <div className="pt-10 border-t border-white/5 text-body/60 text-sm">
-          <p>© 2024 All Rights Reserved by <a href="#" target="_blank" className="text-white hover:text-primary transition-colors">ThemeJunction</a></p>
+        <div className="pt-10 border-t border-border text-text-secondary/60 text-sm">
+          <p>© 2024 All Rights Reserved by <a href="#" target="_blank" className="text-text-primary hover:text-primary transition-colors">ThemeJunction</a></p>
         </div>
       </div>
     </footer>

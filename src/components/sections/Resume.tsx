@@ -54,7 +54,7 @@ const education = [
 
 const Resume = () => {
   return (
-    <section className="py-24 bg-accent" id="resume">
+    <section className="py-24 bg-background" id="resume">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2 
@@ -62,7 +62,7 @@ const Resume = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-4xl md:text-5xl font-bold text-text-primary mb-4"
           >
             My Resume
           </motion.h2>
@@ -75,7 +75,7 @@ const Resume = () => {
               <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary text-2xl">
                 <FaBriefcase />
               </div>
-              <h3 className="text-3xl font-bold text-white">Work Experience</h3>
+              <h3 className="text-3xl font-bold text-text-primary">Work Experience</h3>
             </div>
             
             <div className="space-y-8">
@@ -86,12 +86,12 @@ const Resume = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: item.delay }}
                   viewport={{ once: true }}
-                  className="relative pl-8 border-l border-white/10"
+                  className="relative pl-8 border-l border-border"
                 >
                   <div className="absolute top-0 left-[-5px] w-[10px] h-[10px] rounded-full bg-primary" />
                   <span className="text-primary font-medium text-sm block mb-2">{item.period}</span>
-                  <h4 className="text-xl font-bold text-white mb-1 uppercase tracking-tight">{item.title}</h4>
-                  <p className="text-body/60 text-sm">{item.company}</p>
+                  <h4 className="text-xl font-bold text-text-primary mb-1 uppercase tracking-tight">{item.title}</h4>
+                  <p className="text-text-secondary/60 text-sm">{item.company}</p>
                 </motion.div>
               ))}
             </div>
@@ -103,7 +103,7 @@ const Resume = () => {
               <div className="w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center text-primary text-2xl">
                 <FaGraduationCap />
               </div>
-              <h3 className="text-3xl font-bold text-white">Education</h3>
+              <h3 className="text-3xl font-bold text-text-primary">Education</h3>
             </div>
 
             <div className="space-y-8">
@@ -114,12 +114,12 @@ const Resume = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.5, delay: item.delay }}
                   viewport={{ once: true }}
-                  className="relative pl-8 border-l border-white/10"
+                  className="relative pl-8 border-l border-border"
                 >
                   <div className="absolute top-0 left-[-5px] w-[10px] h-[10px] rounded-full bg-primary" />
                   <span className="text-primary font-medium text-sm block mb-2">{item.period}</span>
-                  <h4 className="text-xl font-bold text-white mb-1 uppercase tracking-tight">{item.title}</h4>
-                  <p className="text-body/60 text-sm">{item.institution}</p>
+                  <h4 className="text-xl font-bold text-text-primary mb-1 uppercase tracking-tight">{item.title}</h4>
+                  <p className="text-text-secondary/60 text-sm">{item.institution}</p>
                 </motion.div>
               ))}
             </div>

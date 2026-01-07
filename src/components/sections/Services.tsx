@@ -33,7 +33,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="py-24 bg-accent" id="services">
+    <section className="py-24 bg-background" id="services">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <motion.h2 
@@ -41,7 +41,7 @@ const Services = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
             viewport={{ once: true }}
-            className="text-4xl md:text-5xl font-bold text-white mb-4"
+            className="text-4xl md:text-5xl font-bold text-text-primary mb-4"
           >
             Services
           </motion.h2>
@@ -64,16 +64,16 @@ const Services = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.5, delay: service.delay }}
               viewport={{ once: true }}
-              className="group p-10 bg-secondary/50 rounded-[30px] border border-white/5 hover:border-primary transition-all duration-300 flex items-start gap-8"
+              className="group p-10 bg-surface rounded-[30px] border border-border hover:border-primary transition-all duration-300 flex items-start gap-8 shadow-sm hover:shadow-lg"
             >
               <div className="text-4xl text-primary transition-transform duration-300 group-hover:rotate-12">
                 {service.icon}
               </div>
               <div>
-                <h3 className="text-2xl font-bold text-white mb-4 group-hover:text-primary transition-colors">
+                <h3 className="text-2xl font-bold text-text-primary mb-4 group-hover:text-primary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-body leading-relaxed">
+                <p className="text-text-secondary leading-relaxed">
                   {service.desc}
                 </p>
               </div>
