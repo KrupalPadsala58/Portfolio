@@ -18,8 +18,8 @@ const russo = Russo_One({
 import { ThemeProvider } from '@/context/theme-context'
 
 export const metadata: Metadata = {
-  title: 'Aneri Raval – Portfolio',
-  description: 'Aneri Raval - Professional Portfolio',
+  title: 'Innovcept – Portfolio',
+  description: 'Krupal Padsala - Professional Portfolio',
 }
 
 export default function RootLayout({
