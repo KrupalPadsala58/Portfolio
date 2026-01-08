@@ -40,27 +40,21 @@ const Hero = () => {
             className="w-full md:w-7/12 text-center md:text-left order-1 md:order-2"
           >
             <span className="inline-block text-xl font-medium text-text-primary mb-4">
-              Hi, I am Aneri.
+              Hi, I am Krupal Padsala.
             </span>
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-text-primary mb-6 leading-tight">
-              A creative <span className="text-primary italic">designer</span> based in India
+              Elevate Your <span className="text-primary italic">Business</span> with Cutting-Edge Web Solutions
             </h1>
             <p className="text-lg md:text-xl text-text-secondary max-w-2xl mb-10 mx-auto md:mx-0">
-              I design and code beautifully simple things and I love what I do. Just simple like that!
+              I help startups, founders, and businesses turn ideas into scalable web applications, conversion-focused websites, and revenue-driven SaaS products.
             </p>
 
             <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
               <a 
-                href="#" 
+                href="#contact" 
                 className="px-8 py-4 bg-secondary text-white font-bold rounded-full hover:bg-primary transition-colors border border-primary/20"
               >
-                Got a project?
-              </a>
-              <a 
-                href="#" 
-                className="px-8 py-4 bg-primary text-white font-bold rounded-full hover:bg-secondary transition-colors"
-              >
-                Let&apos;s talk!
+                Let&apos;s Upgrade Your Business – Get in Touch Today!
               </a>
             </div>
           </motion.div>
@@ -69,7 +63,7 @@ const Hero = () => {
       
       {/* Background decoration or text-stroke if needed */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-[20vw] font-bold text-text-primary opacity-5 whitespace-nowrap pointer-events-none select-none z-0">
-        ANERI RAVAL
+        Krupal Padsala
       </div>
     </section>
   )

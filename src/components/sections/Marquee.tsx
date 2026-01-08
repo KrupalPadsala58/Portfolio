@@ -1,42 +1,62 @@
-"use client"
+"use client";
 
-import React from 'react'
-import { motion } from 'framer-motion'
-import Image from 'next/image'
+import React from "react";
+import { motion } from "framer-motion";
+import Image from "next/image";
 
 const marqueeItems = [
-  { title: 'Development', icon: 'https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png' },
-  { title: 'Design', icon: 'https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png' },
-  { title: 'Webflow', icon: 'https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png' },
-  { title: 'Graphic', icon: 'https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png' },
-  { title: 'Motion', icon: 'https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png' },
-]
+  {
+    title: "Development",
+    icon: "https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png",
+  },
+  {
+    title: "Design",
+    icon: "https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png",
+  },
+  {
+    title: "Webflow",
+    icon: "https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png",
+  },
+  {
+    title: "Graphic",
+    icon: "https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png",
+  },
+  {
+    title: "Motion",
+    icon: "https://gerold.themejunction.net/wp-content/uploads/2024/09/marquee-icon.png",
+  },
+];
 
 const Marquee = () => {
   // Duplicate items for seamless loop
-  const duplicatedItems = [...marqueeItems, ...marqueeItems, ...marqueeItems, ...marqueeItems]
+  const duplicatedItems = [
+    ...marqueeItems,
+    ...marqueeItems,
+    ...marqueeItems,
+    ...marqueeItems,
+  ];
 
   return (
-    <section className="bg-surface py-14 overflow-hidden border-y border-border">
+    <section className="bg-surface py-5 overflow-hidden border-y border-border">
       <div className="flex whitespace-nowrap">
-        <motion.div 
+        <motion.div
           className="flex items-center gap-12"
           animate={{ x: [0, -1000] }}
-          transition={{ 
-            duration: 20, 
-            repeat: Infinity, 
-            ease: "linear" 
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "linear",
           }}
         >
           {duplicatedItems.map((item, index) => (
             <div key={index} className="flex items-center gap-4">
               <div className="w-8 h-8 opacity-50 relative">
-                <Image 
-                  src={item.icon} 
-                  alt="" 
+                <Image
+                  src={item.icon}
+                  alt=""
                   width={32}
                   height={32}
-                  className="w-full h-full object-contain" 
+                  className="w-full h-full object-contain"
                 />
               </div>
               <h2 className="text-4xl md:text-5xl font-bold text-text-primary/10 uppercase tracking-tighter">
@@ -47,7 +67,7 @@ const Marquee = () => {
         </motion.div>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Marquee
+export default Marquee;
