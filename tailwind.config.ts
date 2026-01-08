@@ -13,6 +13,7 @@ const config: Config = {
         secondary: 'var(--secondary)',
         background: 'var(--background)',
         surface: 'var(--surface)',
+        'surface-navbar': 'var(--surface-navbar)',
         'text-primary': 'var(--text-primary)',
         'text-secondary': 'var(--text-secondary)',
         border: 'var(--border)',

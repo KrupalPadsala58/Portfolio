@@ -16,6 +16,7 @@
 :root.dark {
   --background: #0f0715;
   --surface: #140c1c;
+  --surface-navbar: rgba(15, 7, 21, 0.98);
   --text-primary: #ffffff;
   --text-secondary: #dddddd;
   --border: rgba(135, 80, 247, 0.2);
@@ -26,6 +27,7 @@
 :root.light {
   --background: #f6f3fc;
   --surface: #ffffff;
+  --surface-navbar: rgba(255, 255, 255, 0.98);
   --text-primary: #140c1c;
   --text-secondary: #2a1454;
   --border: rgba(135, 80, 247, 0.1);

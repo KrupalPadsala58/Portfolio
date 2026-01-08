@@ -4,6 +4,7 @@ import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaArrowRight } from "react-icons/fa";
 import Image from "next/image";
+import WorkSidePanel from "../ui/WorkSidePanel";
 
 interface Project {
   title: string;
@@ -186,6 +187,7 @@ const Works = () => {
   return (
     <section className="py-24 bg-background relative" id="works">
       {/* Background Shape */}
+      <WorkSidePanel />
       <div className="absolute top-0 right-0 opacity-20 pointer-events-none select-none">
         <Image
           src="https://gerold.themejunction.net/wp-content/uploads/2024/05/h2-testimonial-shape.png"
